@@ -3,22 +3,47 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MidPacific Soviet of Letters</title>
-  <link rel="stylesheet" href="css/styles.css" />
+  <title>MPSoL Archive Cabinet</title>
+  <link rel="stylesheet" href="css/cabinet.css">
+  <script defer src="js/cabinet.js"></script>
 </head>
 <body>
   <h1>MidPacific Soviet of Letters</h1>
-  <h2>mps-ol.to</h2>
-  <nav>
-    <a href="about.html">About</a>
-    <a href="archive/">Archive</a>
-    <a href="induction-form.html">Induction</a>
-    <a href="mailto:submissions.mpsol@proton.me">Contact</a>
-  </nav>
-  <p class="quote">"Distributing symbolic surplus following the Great Cessation, 1987."</p>
+  <h2>Post-Victory Archive Interface</h2>
+  <section class="cabinet">
+    <div class="drawer" onclick="toggleDrawer(this)">
+      <div class="label">🗃 GLYPH REPORTS</div>
+      <ul class="contents">
+        <li><a href="archive/glyphless-condition.txt">The Glyphless Condition</a></li>
+        <li><a href="archive/moscow-soviet-1935.txt">Moscow Soviet – 1935</a></li>
+      </ul>
+    </div>
+    <div class="drawer" onclick="toggleDrawer(this)">
+      <div class="label">🗄 INDUCTION INTAKES</div>
+      <ul class="contents">
+        <li><a href="induction-form.html">Field Induction Form</a></li>
+        <li><a href="press-release.html">Official Statement</a></li>
+      </ul>
+    </div>
+    <div class="drawer" onclick="toggleDrawer(this)">
+      <div class="label">📁 OPERATIONAL SURPLUS</div>
+      <ul class="contents">
+        <li><a href="about.html">Post-Victory Doctrine</a></li>
+        <li><a href="interview.html">Interview with the Rememberer</a></li>
+      </ul>
+    </div>
+    <div class="drawer" onclick="toggleDrawer(this)">
+      <div class="label">📂 CLASSIFIED FILES</div>
+      <ul class="contents">
+        <li><a href="archive/reception-protocol-a.pdf">Reception Protocol A [PDF]</a></li>
+        <li><a href="#">[REDACTED]</a></li>
+      </ul>
+    </div>
+  </section>
   <footer>
-    Contact: submissions.mpsol@proton.me<br />
-    Issued under Post-Victory Protocol. No warranties implied.
+    Contact: <a href="mailto:submissions.mpsol@proton.me">submissions.mpsol@proton.me</a><br/>
+    This archive operates under sovereign epistemic saturation.<br/>
+    Access beyond this point may induce symbolic residue.
   </footer>
 </body>
 </html>
